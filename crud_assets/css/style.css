@@ -1,0 +1,138 @@
+.crud_ListTble{
+	width:100%;
+	font-family: Tahoma;
+	font-size: 12px;
+}
+.crud_ListTble th{
+	padding: 5px;
+	background-color: #73AEDB;
+}
+
+
+.crud_ListTble th li , .crud_VerticalTable li{
+	list-style:none;
+	text-align:right;
+	font-size:11px;
+	font-weight:normal;
+}
+.crud_ListTble td{
+	padding: 5px;
+	text-align:center;
+}
+
+.crud_ListTble tr{
+	background-color:#CCC ;
+	 text-align:center;
+}
+
+.crud_popup {
+	background: #333;
+	color: #FFF;
+	border-radius: 4px;
+	padding: 8px;
+	top: 40%;
+	position: fixed;
+	display: block;
+	width: 400px;
+	text-align: center;
+	box-shadow: 0 0 7px rgba(0,0,0,0.6);
+	z-index: 3000;
+	opacity: .95;
+	filter: alpha(opacity=95);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
+	right: 50%;
+	margin-right: -200px;
+}
+.crud_popup .crud_msg{
+	background-color: #FFCC00;
+	display: block;
+	padding: 10px;
+	color: #000;
+	font-size: 12px;
+	font-family: Tahoma;
+	font-size: 12px;
+	direction:rtl;
+}
+.crud_popup .crud_close{
+	text-decoration: none;
+	font-weight: bold;
+	color: #FC0;
+	margin-right: 2px;
+	margin-bottom: 2px;
+	margin-left: 2px;
+}
+
+.crud_fail{
+	padding: 14px;
+	width: 50%;
+	margin-top: 7px;
+	margin-right: auto;
+	margin-bottom: 7px;
+	margin-left: auto;
+	background-color: #FF9900;
+	border: solid 2px black;
+	text-align: center;
+	font-family: Tahoma;
+	font-size: 12px;
+}
+.crud_fail span{
+	color: #06F;
+	padding-top: 3px;
+	padding-left: 3px;
+}
+
+.crud_VerticalTable{
+	width:60%;
+	margin : 0 auto ;
+	text-align:center;
+	font-family: Tahoma;
+	font-size: 12px;
+}
+
+.crud_VerticalTable td{
+	padding:5px;
+	background-color:#CCC ;
+	text-align:right;
+	direction:rtl;
+}
+.crud_VerticalTable td input[type=text]{
+	padding:5px;
+	width:90%;
+}
+.crud_VerticalTable th{
+	padding: 5px;
+	background-color: #8FB9E7;
+	
+}
+
+.crud_list li{
+	list-style:none;
+	margin:2px;
+}
+
+#crud_sort_div , #crud_search_div {
+	padding:5px;
+}
+
+#crud_sort_div select , #crud_search_div select , #crud_sort_div option , #crud_search_div option  ,  #crud_search_div input[type=text] , #crud_sort_div input[type=text] {
+	width : 180px ; 
+	padding:5px;
+	
+}
+
+#crud_search_div input[type=submit] , #crud_sort_div input[type=submit] {
+	width : 80px ; 
+	padding:5px;
+}
+
+#crud_pagination {
+	padding:5px;
+}
+
+#crud_pagination a{
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	font-family: Tahoma;
+	color: #06C;
+}
