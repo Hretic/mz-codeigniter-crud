@@ -1,0 +1,802 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+
+
+<style>
+body {
+ margin: 0;
+ padding: 0;
+ font-family: Lucida Grande, Verdana, Geneva, Sans-serif;
+ font-size: 14px;
+ color: #333;
+ background-color: #fff;
+ direction:rtl;
+ text-align:right;
+}
+
+a {
+ color: #0134c5;
+ background-color: transparent;
+ text-decoration: none;
+ font-weight: normal;
+ outline-style: none;
+}
+a:visited {
+ color: #0134c5;
+ background-color: transparent;
+ text-decoration: none;
+ outline-style: none;
+}
+a:hover {
+ color: #000;
+ text-decoration: none;
+ background-color: transparent;
+ outline-style: none;
+}
+
+#breadcrumb {
+ float: left;
+ background-color: transparent;
+ margin: 10px 0 0 42px;
+ padding: 0;
+ font-size: 10px;
+ color: #666;
+}
+#breadcrumb_right {
+ float: right;
+ width: 175px;
+ background-color: transparent;
+ padding: 8px 8px 3px 0;
+ text-align: right;
+ font-size: 10px;
+ color: #666;
+}
+#nav {
+ background-color: #494949;
+ margin: 0;
+ padding: 0;
+}
+#nav2 {
+ background: #fff url(images/nav_bg_darker.jpg) repeat-x left top;
+ padding: 0 310px 0 0;
+ margin: 0;
+ text-align: right;
+}
+#nav_inner {
+ background-color: transparent;
+ padding: 8px 12px 0 20px;
+ margin: 0;
+ font-family: Lucida Grande, Verdana, Geneva, Sans-serif;
+ font-size: 11px;
+}
+
+#nav_inner h3 {
+ font-size: 12px;
+ color: #fff;
+ margin: 0;
+ padding: 0;
+}
+
+#nav_inner .td_sep {
+ background: transparent url(images/nav_separator_darker.jpg) repeat-y left top;
+ width: 25%;
+ padding: 0 0 0 20px;
+}
+#nav_inner .td {
+ width: 25%;
+}
+#nav_inner p {
+ color: #eee;
+ background-color: transparent;
+ padding:0;
+ margin: 0 0 10px 0;
+}
+#nav_inner ul {
+ list-style-image: url(images/arrow.gif);
+ padding: 0 0 0 18px;
+ margin: 8px 0 12px 0;
+}
+#nav_inner li {
+ padding: 0;
+ margin: 0 0 4px 0;
+}
+
+#nav_inner a {
+ color: #eee;
+ background-color: transparent;
+ text-decoration: none;
+ font-weight: normal;
+ outline-style: none;
+}
+
+#nav_inner a:visited {
+ color: #eee;
+ background-color: transparent;
+ text-decoration: none;
+ outline-style: none;
+}
+
+#nav_inner a:hover {
+ color: #ccc;
+ text-decoration: none;
+ background-color: transparent;
+ outline-style: none;
+}
+
+#masthead {
+ margin: 0 40px 0 35px;
+ padding: 0 0 0 6px;
+ border-bottom: 1px solid #999;
+}
+
+#masthead h1 {
+background-color: transparent;
+color: #e13300;
+font-size: 18px;
+font-weight: normal;
+margin: 0;
+padding: 0 0 6px 0;
+}
+
+#searchbox {
+ background-color: transparent;
+ padding: 6px 40px 0 0;
+ text-align: right;
+ font-size: 10px;
+ color: #666;
+}
+
+#img_welcome {
+ border-bottom: 1px solid #D0D0D0;
+ margin: 0 40px 0 40px;
+ padding: 0;
+ text-align: center;
+}
+
+#content {
+ margin: 20px 40px 0 40px;
+ padding: 0;
+}
+
+#content p {
+ margin: 12px 20px 12px 0;
+}
+
+#content h1 {
+color: #e13300;
+border-bottom: 1px solid #666;
+background-color: transparent;
+font-weight: normal;
+font-size: 24px;
+margin: 0 0 20px 0;
+padding: 3px 0 7px 3px;
+}
+
+#content h2 {
+ background-color: transparent;
+ border-bottom: 1px solid #999;
+ color: #000;
+ font-size: 18px;
+ font-weight: bold;
+ margin: 28px 0 16px 0;
+ padding: 5px 0 6px 0;
+}
+
+#content h3 {
+ background-color: transparent;
+ color: #333;
+ font-size: 16px;
+ font-weight: bold;
+ margin: 16px 0 15px 0;
+ padding: 0 0 0 0;
+}
+
+#content h4 {
+ background-color: transparent;
+ color: #444;
+ font-size: 14px;
+ font-weight: bold;
+ margin: 22px 0 0 0;
+ padding: 0 0 0 0;
+}
+
+#content img {
+ margin: auto;
+ padding: 0;
+}
+
+#content code {
+ font-family: Monaco, Verdana, Sans-serif;
+ font-size: 12px;
+ background-color: #f9f9f9;
+ border: 1px solid #D0D0D0;
+ color: #002166;
+ display: block;
+ margin: 14px 0 14px 0;
+ padding: 12px 10px 12px 10px;
+}
+
+#content pre {
+ font-family: Monaco, Verdana, Sans-serif;
+ font-size: 12px;
+ background-color: #f9f9f9;
+ border: 1px solid #D0D0D0;
+ color: #002166;
+ display: block;
+ margin: 14px 0 14px 0;
+ padding: 12px 10px 12px 10px;
+}
+
+#content .path {
+ background-color: #EBF3EC;
+ border: 1px solid #99BC99;
+ color: #005702;
+ text-align: center;
+ margin: 0 0 14px 0;
+ padding: 5px 10px 5px 8px;
+}
+
+#content dfn {
+ font-family: Lucida Grande, Verdana, Geneva, Sans-serif;
+ color: #00620C;
+ font-weight: bold;
+ font-style: normal;
+}
+#content var {
+ font-family: Lucida Grande, Verdana, Geneva, Sans-serif;
+ color: #8F5B00;
+ font-weight: bold;
+ font-style: normal;
+}
+#content samp {
+ font-family: Lucida Grande, Verdana, Geneva, Sans-serif;
+ color: #480091;
+ font-weight: bold;
+ font-style: normal;
+}
+#content kbd {
+ font-family: Lucida Grande, Verdana, Geneva, Sans-serif;
+ color: #A70000;
+ font-weight: bold;
+ font-style: normal;
+}
+
+#content ul {
+ list-style-image: url(images/arrow.gif);
+ margin: 10px 0 12px 0;
+}
+
+li.reactor {
+ list-style-image: url(images/reactor-bullet.png);
+}
+#content li {
+ margin-bottom: 9px;
+}
+
+#content li p {
+ margin-left: 0;
+ margin-right: 0;
+}
+
+#content .tableborder {
+ border: 1px solid #999;
+}
+#content th {
+ font-weight: bold;
+ text-align: left;
+ font-size: 12px;
+ background-color: #666;
+ color: #fff;
+ padding: 4px;
+}
+
+#content .td {
+ font-weight: normal;
+ font-size: 12px;
+ padding: 6px;
+ background-color: #f3f3f3;
+}
+
+#content .tdpackage {
+ font-weight: normal;
+ font-size: 12px;
+}
+
+#content .important {
+ background: #FBE6F2;
+ border: 1px solid #D893A1;
+ color: #333;
+ margin: 10px 0 5px 0;
+ padding: 10px;
+}
+
+#content .important p {
+ margin: 6px 0 8px 0;
+ padding: 0;
+}
+
+#content .important .leftpad {
+ margin: 6px 0 8px 0;
+ padding-left: 20px;
+}
+
+#content .critical {
+ background: #FBE6F2;
+ border: 1px solid #E68F8F;
+ color: #333;
+ margin: 10px 0 5px 0;
+ padding: 10px;
+}
+
+#content .critical p {
+ margin: 5px 0 6px 0;
+ padding: 0;
+}
+
+
+#footer {
+background-color: transparent;
+font-size: 10px;
+padding: 16px 0 15px 0;
+margin: 20px 0 0 0;
+text-align: center;
+}
+
+#footer p {
+ font-size: 10px;
+ color: #999;
+ text-align: center;
+}
+#footer address {
+ font-style: normal;
+}
+
+.center {
+ text-align: center;
+}
+
+img {
+ padding:0;
+ border: 0;
+ margin: 0;
+}
+
+.nopad {
+ padding:0;
+ border: 0;
+ margin: 0;
+}
+
+
+form {
+ margin: 0;
+ padding: 0;
+}
+
+.input {
+ font-family: Lucida Grande, Verdana, Geneva, Sans-serif;
+ font-size: 11px;
+ color: #333;
+ border: 1px solid #B3B4BD;
+ width: 100%;
+ font-size: 11px;
+ height: 1.5em;
+ padding: 0;
+ margin: 0;
+}
+
+.textarea {
+ font-family: Lucida Grande, Verdana, Geneva, Sans-serif;
+ font-size: 14px;
+ color: #143270;
+ background-color: #f9f9f9;
+ border: 1px solid #B3B4BD;
+ width: 100%;
+ padding: 6px;
+ margin: 0;
+}
+
+.select {
+ background-color: #fff;
+ font-size:  11px;
+ font-weight: normal;
+ color: #333;
+ padding: 0;
+ margin: 0 0 3px 0;
+}
+
+.checkbox {
+ background-color: transparent;
+ padding: 0;
+ border: 0;
+}
+
+.submit {
+ background-color: #000;
+ color: #fff;
+ font-weight: normal;
+ font-size: 10px;
+ border: 1px solid #fff;
+ margin: 0;
+ padding: 1px 5px 2px 5px;
+}
+
+dfn , code{
+	text-align:left ;
+	direction:ltr;
+}
+</style>
+<title>mz-crud</title>
+</head>
+<body>
+
+<!-- START NAVIGATION -->
+<div id="nav"><div id="nav_inner"></div></div>
+<div id="nav2"><a name="top"></a></div>
+<div id="masthead"></div>
+<!-- END NAVIGATION -->
+
+
+<!-- START BREADCRUMB --><!-- END BREADCRUMB -->
+
+<br clear="all" />
+
+
+<!-- START CONTENT -->
+<div id="content">
+
+
+<h1>CodeIgniter mz-crud </h1>
+
+<p>مواردی که انجام میدهد :</p>
+
+<ul>
+<li>لیست کردن داده ها از دیتبایس </li>
+
+<li>اجرای صفحه بندی وجستجو و مرتب سازی بر روی داده های لیست شده</li>
+
+<li>ورود داده ها در دیتابیس</li>
+
+<li>ادیت دیتبایس</li>
+<li>دلیت از دیتبایس</li>
+</ul>
+
+<p>&nbsp;</p>
+
+
+
+<h2>روش نصب </h2>
+
+<p>محتویات فایل فشرده را در روت اپلیکیشن کدایگنایتر خود کپی کنید (ترجیحا قبل از انجام اینکار یک کپی در صورت حساس بودن فایل های موجود بگیرید )</p>
+<p>mz-crud با استفاده از دستور<dfn>this->load-&gt;library</dfn> فراخوانی میشود:</p>
+<p>&nbsp;</p>
+<code>$this->load->library('mz_crud');</code>
+
+<p>وقتی کتابخانه لود شد آماده استفاده میشود , برای استفاده از کتابخانه از شی :<dfn>this->mz_crud </dfn>استفاده میشود</p>
+
+
+<p>&nbsp;</p>
+<h2>توابع موجود</h2>
+
+<p>3 تابع اصلی وجود دارد:</p>
+
+<ul  style="text-align:left ; direction:ltr">
+<li>$this->mz_crud->list_('نام جدول دیتابیس')</li>
+<li>$this->mz_crud->add('نام جدول دیتابیس')</li>
+<li>$this->mz_crud->edit('شناسه ردیف' , 'نام جدول دیتابیس')</li>
+</ul>
+
+
+<h2>لیست کردن محتویا جدول users</h2>
+
+<p>&nbsp;</p>
+
+<code><br />
+		$dataTable = $this->mz_crud->list_('users');<br />
+
+</code>
+
+
+
+<h2>ورود داده به جدول users</h2>
+
+<code><br />
+		$insertTable = $this->mz_crud->add('users');<br />
+
+</code>
+
+
+<h2>ادیت کردن یک ردیف از حدول users</h2>
+
+<code><br />
+		$insertTable = $this->mz_crud->edit( $id , 'users');<br />
+
+</code>
+
+
+<strong style="color:#F06"> برای دیدن کد های کامل تر به بخش کد های نمونه در پایین صفحه مراجعه کنید</strong>
+
+<p>&nbsp;</p>
+
+
+
+<h2>تنظیمات</h2>
+
+<p>برای وارد کردن تنظیمات ابتدا آنهای را به صورت یک آرایه مقدار دهی کنید و سپس با استفاده از دستور set_config آنها را ثبت کنید</p>
+<p>&nbsp;</p>
+<code>
+
+<span class="codespan">
+$config['per_page']</span> = 2;<br />
+<span class="codespan">
+$config['search']</span> = array( 'username' , 'email');<br />
+<span class="codespan">
+$config['sort']</span> = array( 'username');<br />
+
+
+$this->mz_crud->set_config($config);
+
+</code><p>&nbsp;</p>
+<p>تنظیمات قابل انجام به شرح زیر هستند .</p>
+
+<p>توجه داشته باشید که همه تنظیمات برای همه توابع قابل استفاده نیستند</p>
+
+
+
+
+<table cellpadding="0" cellspacing="1" border="0" style="width:100%" class="tableborder">
+<tr>
+<th>عنوان</th>
+<th>مقدار پیش فرض</th>
+<th>مقدار قابل قبول</th>
+<th>توضیحات</th>
+<th>توابعی که این تنظیم را قبول میکنند</th>
+</tr>
+
+<tr>
+<td class="td"><strong>labels</strong></td>
+<td class="td">database column label</td>
+<td class="td">array of 'column'=&gt;'label' pairs </td>
+<td class="td">عنوان ستون های دیتابیس در صفحه نمایش را مشخص میکند</td>
+<td class="td">همه</td>
+</tr>
+
+<tr>
+<td class="td"><strong>ignor</strong></td>
+<td class="td">None</td>
+<td class="td">array of columns</td>
+<td class="td">ستون هایی از دیتابیس که میخاهید در انجام عملیات نادیده گرفته شوند</td>
+<td class="td">همه</td>
+</tr>
+
+<tr>
+<td class="td"><strong>redirect</strong></td>
+<td class="td">current_url()</td>
+<td class="td">string</td>
+<td class="td">لینکی که پس از انجام عملیات صفحه به آن منتقل میشود</td>
+<td class="td">add , edit </td>
+</tr>
+
+<tr>
+<td class="td"><strong>edit_url</strong></td>
+<td class="td">current_url()</td>
+<td class="td">string</td>
+<td class="td">لینک صفحه ادیت</td>
+<td class="td">list_</td>
+</tr>
+
+
+<tr>
+<td class="td"><strong>fail_url</strong></td>
+<td class="td">current_url()</td>
+<td class="td">string</td>
+<td class="td">لینکی که در صورت انجام نشدن عملیات به آن متقل میشود</td>
+<td class="td">add , edit </td>
+</tr>
+
+
+<tr>
+<td class="td"><strong>inp_type</strong></td>
+<td class="td">type=&quot;text&quot;</td>
+<td class="td">array of 'column'=&gt;'input type' pairs </td>
+<td class="td">نوع ورودی html برای خانه های دیتابیس را مشخص میکند</td>
+<td class="td">همه</td>
+</tr>
+
+<tr>
+<td class="td"><strong>options</strong></td>
+<td class="td">empty array</td>
+<td class="td">2d array of 'column'=&gt;array('option label'=&gt;'option value') </td>
+<td class="td">نوع موارد قابل انتخاب در حالت inp_type  (select , checkbox , radio ) را مشخص میکند</td>
+<td class="td">همه</td>
+</tr>
+
+
+<tr>
+<td class="td"><strong>check_duplicate</strong></td>
+<td class="td">None</td>
+<td class="td">array of columns</td>
+<td class="td">در هنگام ورود داده ها به دیتابیس این خوانه ها را چک میکند تا مقداری تکراری وارد نشود</td>
+<td class="td">همه</td>
+</tr>
+
+<tr>
+<td class="td"><strong>md_options</strong></td>
+<td class="td">None</td>
+<td class="td">array( 'add' , 'edit' , 'delete')</td>
+<td class="td">امکانات مدیریتی موجود در صفحه را مشخص میکند</td>
+<td class="td">list_</td>
+</tr>
+
+<tr>
+<td class="td"><strong>id_fild</strong></td>
+<td class="td">id</td>
+<td class="td">string</td>
+<td class="td">فیلد شناسه در دیتبایس را مشخص میکند</td>
+<td class="td">edit</td>
+</tr>
+
+<tr>
+<td class="td"><strong>per_page</strong></td>
+<td class="td">0</td>
+<td class="td">int</td>
+<td class="td">مشخص میکند که در هر صفحه چند مورد نشان داده شود و درصورتی که مقدار 0 قرار داده شود همه داده ها بدون صفحه بندی نمایش داده خواهند شد</td>
+<td class="td">list_</td>
+</tr>
+
+<tr>
+<td class="td"><strong>search</strong></td>
+<td class="td">empty array</td>
+<td class="td">array of columns</td>
+<td class="td">فیلد هایی که میخواهید امکان سرچ برای آنها قرار داده شود را مشخص میکند</td>
+<td class="td">list_</td>
+</tr>
+
+
+<tr>
+<td class="td"><strong>sort</strong></td>
+<td class="td">empty array</td>
+<td class="td">array of columns</td>
+<td class="td">فیلد هایی که میخاهید امکان مرتب سازی بر اساس آنها وجود داشته باشد را مشخص میکند</td>
+<td class="td">list_</td>
+</tr>
+
+
+
+
+<tr>
+<td class="td"><strong>documentready</strong></td>
+<td class="td">ampty array</td>
+<td class="td">array</td>
+<td class="td">دستورات جاوا اسکریپتی که در هنگام آماده شدن صفحه میخواهید اجار شوند</td>
+<td class="td">همه</td>
+</tr>
+
+<tr>
+<td class="td"><strong>lang</strong></td>
+<td class="td">array('file'=&gt;'crud' , 'folder'=&gt;'crud')</td>
+<td class="td">array</td>
+<td class="td">مکان فایل زبان را مشخص میکند</td>
+<td class="td">همه</td>
+</tr>
+
+</table>
+
+
+<p>&nbsp;</p>
+
+
+<h2>کد نمونه</h2>
+
+
+<p> فرض کنید که جدولی با  عنوان "users" در دیتبایس داریم  با فیلد های زیر<br />
+  id , username , email , recive_newsletter , profile
+</p>
+
+<code>
+<style>
+.codespan{
+	display:inline-block;
+	width:170px ;
+}
+</style>
+
+class index extends CI_Controller {
+<br /><br />
+	function crudList(){
+<br /><br />
+        $this->load->library('mz_crud');<br />
+
+<br />		
+		<span class="codespan">$config['ignor']            </span> = array('id' , 'recive_newsletter' , 'profile' );<br />
+		<span class ="codespan">$config['check_duplicate'] </span> = array( 'username' , 'email');<br />
+		<span class="codespan">$config['edit_url']       </span>  = base_url().'index/crudEdit/';<br />
+		<span class="codespan">$config['md_options']      </span> = array( 'add' , 'edit' , 'delete');<br />
+		<span class="codespan">$config['labels']         </span>  = array( 'username'=>'UserName' , 'email'=>'Email);<br />
+        
+        
+		<span class="codespan">$config['per_page']       </span>  = 2;<br />
+		<span class="codespan">$config['search']         </span>  = array( 'username' , 'email');<br />
+		<span class="codespan">$config['sort']           </span>  = array( 'username');<br /><br />
+
+
+		$this->mz_crud->set_config($config);<br />
+		echo $this->mz_crud->list_('users');<br /><br />
+		
+	}<br /><br /><br />
+
+	function crudInsert(){<br /><br />
+		
+        $this->load->library('mz_crud');<br /><br />
+
+		
+		<span class="codespan">$config['labels']   </span>         = array('username'=>'UserName' , 'email'=>'Email' , 'recive_newsletter'=>'would you like to recive our newsletter' , 'profile'=>'Choose how you share information on your profile  ?');<br />
+		<span class="codespan">$config['ignor']  </span>           = array('id');<br />
+		<span class="codespan">$config['check_duplicate'] </span>  = array( 'username' , 'email' );<br />
+		<span class="codespan">$config['redirect'] </span>         = base_url().'index/crudList/';<br />
+		<span class="codespan">$config['inp_type'] </span> = array('newsletter'=>'select' , 'profile'=>'radio');<br />
+		<span class="codespan">$config['options']  </span> = array('newsletter'=>array('Yes , i do'=>'1' , 'No , thanx '=>'0' ) ,<br />
+ 'profile'=>array('i want a public profile '=>'public' , 'i want a private profile'=>'private' ));<br />
+ 		<span class="codespan">$config['documentready']  </span>  = array('alert("Please fill in all fields ");');<br />
+<br />
+
+
+		$this->mz_crud->set_config($config);<br />
+		
+		echo $this->mz_crud->add('users');<br /><br />
+	}<br /><br />
+
+
+
+<br />
+<br />
+<br />
+	function crudEdit( $id = 0 ){<br /><br />
+		
+		
+        $this->load->library('mz_crud');<br /><br />
+
+		
+		<span class="codespan">$config['labels']   </span>         = array('username'=>'UserName' , 'email'=>'Email' , 'recive_newsletter'=>'would you like to recive our newsletter' , 'profile'=>'Choose how you share information on your profile  ?');<br />
+		<span class="codespan">$config['ignor']  </span>           = array('id');<br />
+		<span class="codespan">$config['check_duplicate'] </span>  = array( 'username' , 'email' );<br />
+		<span class="codespan">$config['redirect'] </span>         = base_url().'index/crudList/';<br />
+		<span class="codespan">$config['inp_type'] </span> = array('newsletter'=>'select' , 'profile'=>'radio');<br />
+		<span class="codespan">$config['options']  </span> = array('newsletter'=>array('Yes , i do'=>'1' , 'No , thanx '=>'0' ) ,<br />
+ 'profile'=>array('i want a public profile '=>'public' , 'i want a private profile'=>'private' ));<br />
+ 		<span class="codespan">$config['documentready']  </span>  = array('alert("Please fill in all fields ");');<br />
+<br />
+
+		
+		$this->mz_crud->set_config($config);<br />
+		
+		echo $this->mz_crud->edit( $id , 'users');<br /><br />
+	}<br /><br /><br />
+
+
+
+}
+
+</code>
+
+
+
+<h2>فایل زبان</h2>
+
+
+<p> این فایل در آدرس : language/crud/. وجود دارد</p>
+
+
+<h2>استایل دهی</h2>
+
+
+<p>  crud_assets/css/. </p>
+
+<p>&nbsp;</p>
+</div>
+</html>
